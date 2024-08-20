@@ -28,7 +28,6 @@
   header {
     display: flex;
     justify-content: center;
-    align-items: center;
 
     height: calc(100vh - 134px);
 
@@ -44,10 +43,12 @@
       .right {
         display: flex;
         flex-direction: column;
-        gap: 20px;
+        gap: 40px;
+
+        width: calc(100% - 531px);
 
         h2 {
-          font-size: 52px;
+          font-size: 60px;
 
           margin: 0;
           padding: 0;
@@ -55,6 +56,10 @@
 
         .text {
           font-size: 20px;
+
+          text-align: left;
+
+          width: 420px;
         }
 
         a {
@@ -71,6 +76,18 @@
           text-decoration: none;
 
           border-radius: 14px;
+        }
+      }
+
+      .left {
+        width: 100%;
+
+        display: flex;
+        justify-content: flex-end;
+
+        img {
+          width: 600.46px;
+          height: 515px;
         }
       }
     }

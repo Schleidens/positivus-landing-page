@@ -4,70 +4,77 @@
 
 <template>
   <navbar class="navbar">
-    <div class="logo">
-      <img
-        :src="Logo"
-        alt=""
-      />
+    <div class="main">
+      <div class="logo">
+        <img
+          :src="Logo"
+          alt=""
+        />
+      </div>
+      <nav>
+        <ul>
+          <li>About Us</li>
+          <li>Services</li>
+          <li>Use Cases</li>
+          <li>Pricing</li>
+          <li>Blog</li>
+        </ul>
+        <a href="">Request a quote</a>
+      </nav>
     </div>
-    <nav>
-      <ul>
-        <li>About Us</li>
-        <li>Services</li>
-        <li>Use Cases</li>
-        <li>Pricing</li>
-        <li>Blog</li>
-      </ul>
-      <a href="">Request a quote</a>
-    </nav>
   </navbar>
 </template>
 
-<script setup></script>
-
 <style lang="scss" scoped>
   navbar {
-    height: 68px;
-
     display: flex;
-    justify-content: space-between;
+    justify-content: center;
     align-items: center;
 
-    padding: 33px 50px;
+    margin: 40px 0;
 
-    font-size: 20px;
-
-    .logo {
-      img {
-        width: 219.54px;
-        height: 36px;
-      }
-    }
-
-    nav {
+    .main {
       display: flex;
-      gap: 40px;
-      ul {
-        display: flex;
-        align-items: center;
-        justify-content: center;
+      justify-content: space-between;
+      align-items: center;
 
-        gap: 40px;
-        list-style: none;
+      font-size: 20px;
 
-        margin: 0;
-        padding: 0;
+      max-width: 1281px;
+      width: 100%;
+      height: 68px;
+
+      .logo {
+        img {
+          height: 36px;
+        }
       }
 
-      a {
-        border: 1px solid black;
+      nav {
+        display: flex;
+        gap: 40px;
+        ul {
+          display: flex;
+          align-items: center;
+          justify-content: center;
 
-        padding: 20px 35px;
+          gap: 40px;
+          list-style: none;
 
-        border-radius: 14px;
+          margin: 0;
+          padding: 0;
+        }
 
-        color: black;
-        text-decoration: none;
+        a {
+          border: 1px solid black;
+
+          padding: 20px 35px;
+
+          border-radius: 14px;
+
+          color: black;
+          text-decoration: none;
+        }
       }
     }
   }
