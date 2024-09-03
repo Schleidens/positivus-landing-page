@@ -2,7 +2,7 @@
   import { ref } from 'vue';
   import Logo from '../assets/logo.svg';
 
-  const isOpen = ref(true);
+  const isOpen = ref(false);
 
   const triggerMenu = () => {
     isOpen.value = !isOpen.value;
@@ -61,6 +61,7 @@
     align-items: center;
 
     margin: 40px 0;
+    padding: 0 20px;
 
     .main {
       display: flex;
