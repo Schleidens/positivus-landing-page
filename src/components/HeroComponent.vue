@@ -1,5 +1,6 @@
 <script setup lang="ts">
   import Illustration from '../assets/Illustration_hero.svg';
+  import PartnersComponent from './PartnersComponent.vue';
 </script>
 
 <template>
@@ -27,15 +28,19 @@
         />
       </div>
     </div>
+    <PartnersComponent />
   </header>
 </template>
 
 <style scoped lang="scss">
   header {
     display: flex;
+    flex-direction: column;
     justify-content: center;
+    align-items: center;
 
-    height: calc(100vh - 134px);
+    min-height: calc(100vh - 134px);
+    height: 100%;
 
     padding: 0 20px;
 
