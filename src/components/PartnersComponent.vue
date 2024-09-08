@@ -49,6 +49,14 @@
 
       @media (max-width: 800px) {
         flex-wrap: wrap;
+        gap: 15px;
+
+        padding: 1em 0;
+
+        img {
+          max-width: calc(33.33% - 15px);
+          width: 100%;
+        }
       }
     }
   }
