@@ -63,6 +63,11 @@
     margin: 40px 0;
     padding: 0 20px;
 
+    position: sticky;
+    top: 0;
+
+    background-color: #fff;
+
     .main {
       display: flex;
       justify-content: space-between;
@@ -96,7 +101,7 @@
             justify-content: center;
             align-items: center;
 
-            position: absolute;
+            position: fixed;
 
             height: 100%;
             width: 100%;
